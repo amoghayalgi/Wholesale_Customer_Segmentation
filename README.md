@@ -107,9 +107,11 @@ The analysis follows a structured data science workflow implemented in **R**:
 ---
 
 ## Project Structure
+```r
 ├── code/ # R scripts for preprocessing, clustering, and PCA
 ├── data/ # Raw and processed dataset files
 ├── visualizations/ # Post-hoc analysis, plots, and results
+```
 ---
 
 ## Technologies Used
