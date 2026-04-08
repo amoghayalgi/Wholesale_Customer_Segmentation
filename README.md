@@ -53,15 +53,16 @@ The analysis follows a structured data science workflow implemented in **R**:
 
 ### 2. Hierarchical Clustering
 - Used to explore natural groupings
-- Dendrogram analysis helped determine optimal cluster count
+- Dendrogram analysis estimated cluster count as 3
 
 ---
 
 ### 3. K-Means Clustering
 - Applied with **k = 3**
-- Validated using:
+- Validated k-value using:
   - Elbow Method (SSE)
   - Silhouette Score
+- Finalized k-means clusters K-means because it defines distinct segments by their average spending patterns (centroids)
 
 ---
 
@@ -105,10 +106,19 @@ The analysis follows a structured data science workflow implemented in **R**:
 
 ---
 
-### Delicatessen Category Pivot
-- Shift from mass-market to **premium curated offerings**
-- Reduce waste and improve profitability
-
+## Project Structure
+├── code/ # R scripts for preprocessing, clustering, and PCA
+├── data/ # Raw and processed dataset files
+├── visualizations/ # Post-hoc analysis, plots, and results
 ---
 
-## Project Structure
+## Technologies Used
+
+```r
+library(dplyr)    # Data manipulation
+library(cluster)  # Clustering algorithms (Hierarchical & K-Means)
+library(ggplot2)  # Data visualization
+library(tidyr)    # Data cleaning
+
+```
+
